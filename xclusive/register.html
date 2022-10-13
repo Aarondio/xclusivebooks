@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+           <div class="row justify-content-center align-items-center vh-100">
+                 <div class="col-md-5">
+                       <div class="p-5 shadow bg-white">
+                            <h1 class="text-center">Create an Account</h1>
+                              <form action="#">
+                                     <div class="mb-3">
+                                             <label for="fullname">Fullname</label>
+                                            <input type="text" class="form-control rounded-0" placeholder="Fullname">
+                                     </div>
+                                     <div class="mb-3">
+                                             <label for="email">Email</label>
+                                            <input type="email" placeholder="Email" class="form-control rounded-0">
+                                     </div>
+                                     <div class="mb-3">
+                                             <label for="state">State</label>
+                                             <select class="form-select rounded-0">
+                                                <option value="">--select your state--</option>
+                                                  <option value="Abuja">Abuja</option>
+                                                  <option value="Kaduna">Kaduna</option>
+                                                  <option value="lagos">Lagos</option>
+                                                  <option value="Ibadan">Ibadan</option>
+                                             </select>
+                                           
+                                     </div>
+                                     <div class="mb-3">
+                                             <label for="state">Year of Birth</label>
+                                             <select class="form-select rounded-0">
+                                                   <option value="">--Select year--</option>
+                                                   <script>
+                                                        var year
+                                                        for(year=2030;year>=1920;year--){
+                                                            document.write("<option value='"+year+"'>"+year+"</option>")
+                                                        }
+                                                   </script>
+                                             </select>
+                                           
+                                     </div>
+                                     <div class="mb-3">
+                                        <label for="password">Password</label>
+                                           <input type="password" class="form-control rounded-0" placeholder="Passoword">
+                                     </div>
+
+                                     <div class="d-grid mb-2">
+                                         <button class="btn btn-primary rounded-0">Sign up</button>
+                                     </div>
+
+                                     <p class="text-center">Already registerd? <a href="login.html">Sign in</a> </p>
+
+                              </form>
+                       </div>
+                 </div>
+           </div>
+    </div>
+</body>
+</html>
